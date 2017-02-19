@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_theme_color</item>
+        <item name="colorPrimaryDark">@color/main_theme_color</item>
+        <item name="colorAccent">@color/main_theme_color</item>
+        <item name="android:overScrollMode">never</item>
+        <!--<item name="android:navigationBarColor">@color/colorPrimary</item>-->
+        <!--<item name="android:fitsSystemWindows">true</item>-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+
+        <!--<item name="android:windowContentTransitions">true</item>-->
+        <!--<item name="android:windowAllowEnterTransitionOverlap">true</item>-->
+        <!--<item name="android:windowAllowReturnTransitionOverlap">true</item>-->
+        <!--<item name="android:windowEnterTransition">@transition/slide_in</item>-->
+        <!--<item name="android:windowReenterTransition">@transition/hold</item>-->
+        <!--<item name="android:windowReturnTransition">@transition/slide_out</item>-->
+        <!--<item name="android:windowExitTransition">@transition/hold</item>-->
+        <!--<item name="android:windowAnimationStyle">@style/ActivityAnimFade</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+
+    </style>
+
+    <style name="SettingTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_theme_color</item>
+        <item name="colorPrimaryDark">@color/main_theme_color</item>
+        <item name="colorAccent">@color/main_theme_color</item>
+    </style>
+
+    <style name="ContentTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_theme_color</item>
+        <item name="colorPrimaryDark">@color/main_theme_color</item>
+        <item name="colorAccent">@color/main_theme_color</item>
+    </style>
+
+    <style name="ActivityAnimFade" parent="@android:style/Animation.Translucent">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/slide_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/hold</item>-->
+        <item name="android:activityCloseEnterAnimation">@anim/hold</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="border_less" parent="AppTheme">
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="not_border_less" parent="AppTheme">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="elevation" parent="AppTheme">
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <style name="elevation_10">
+        <item name="android:elevation">10dp</item>
+    </style>
+
+</resources>

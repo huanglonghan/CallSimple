@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">RefreshLayout</string>
+
+    <string name="pull_refresh">下拉刷新</string>
+    <string name="release_refresh">释放刷新</string>
+    <string name="refreshing">正在刷新</string>
+    <string name="refresh_done">刷新完成</string>
+
+    <string name="loading">努力加载中...</string>
+    <string name="loading_done">加载完成</string>
+    <string name="moreover_loading">没有更多内容了</string>
+    <string name="left_direction">后退</string>
+    <string name="title_login">登录</string>
+    <string name="avatar">头像</string>
+    <string name="forget_password">忘记密码 ></string>
+    <string name="first_register">快速注册</string>
+    <string name="line">分割线</string>
+    <string name="other_login">其他登陆方式</string>
+    <string name="retrieve_password">找回密码</string>
+    <string name="login_phone_tip">请输入手机号</string>
+    <string name="login_password_tip">密码</string>
+    <string name="reset_password">设置新密码</string>
+    <string name="title_forget">忘记密码</string>
+    <string name="title_register">注册</string>
+    <string name="msg_tip" formatted="false">(%ss)重新发送</string>
+    <string name="send_verify_code">发送验证码</string>
+    <string name="tip_send_msg_succeed">发送成功</string>
+    <string name="tip_send_msg_failed">发送失败</string>
+    <string name="tip_input_verify_code">请输入验证码</string>
+    <string name="tip_please_fillout_phone">请填写手机号</string>
+    <string name="tip_phone_cant_be_empty">手机号不能为空</string>
+    <string name="tip_mandatory_cant_be_empty">必填不能为空</string>
+    <string name="tip_register_failed">注册失败</string>
+    <string name="tip_register_succeed">注册成功</string>
+    <string name="tip_already_register">该账户已经注册</string>
+    <string name="tip_retrieve_failed">找回失败</string>
+    <string name="tip_phone_verify_succeed">手机验证成功</string>
+    <string name="tip_verify_code_error">验证码有误</string>
+    <string name="tip_account_inexistent">该账户不存在</string>
+    <string name="tip_reset_password_failed">重置密码失败</string>
+    <string name="tip_reset_password_succeed">重置密码成功</string>
+    <string name="tip_login_failed">登陆失败</string>
+    <string name="tip_login_succeed">登陆成功</string>
+    <string name="tip_logout_succeed">登出成功</string>
+
+    <string name="title_activity_settings">设置</string>
+    <string name="please_wait">请稍后...</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="save">保存</string>
+    <string name="double_click_exit_tip">再按一次后退键退出程序</string>
+
+    <string name="comment_is_null">评论为空!</string>
+    <string name="brief_default">这个人很懒,什么也没留下!</string>
+
+    <string name="http_default_tip">网络错误!</string>
+
+    <string name="personal_detail_info" formatted="false">%d 关注 %d 粉丝</string>
+
+    <string name="downward_vertical_behavior" translatable="false">live.moplus.www.moplus.view.widget.DownwardBehavior</string>
+    <string name="slide_out_behavior" translatable="false">live.moplus.www.moplus.view.widget.SlideOutBehavior</string>
+    <string name="upward_vertical_behavior" translatable="false">live.moplus.www.moplus.view.widget.UpwardBehavior</string>
+    <string name="done">完成</string>
+    <string name="sort_del">排序/删除</string>
+    <string name="my_interest">已经订阅兴趣点</string>
+    <string name="close">关闭</string>
+    <string name="cover">封面</string>
+    <string name="subscribe">订阅</string>
+    <string name="editor">主编:</string>
+    <string name="already_subscribe">已订阅</string>
+
+
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/action_bar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_marginBottom="15dp"
+            app:riv_corner_radius="5dp"
+            app:riv_oval="true"
+            app:riv_border_color="@android:color/darker_gray"
+            app:riv_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/head_to_title_bar"
+            android:layout_width="@dimen/border_height"
+            android:layout_height="@dimen/border_height"
+            android:id="@+id/portrait_ib"
+            android:contentDescription="@string/avatar"
+            android:src="@drawable/portrait"/>
+
+        <RelativeLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/portrait_ib"
+            android:layout_marginTop="@dimen/head_to_input"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/label_phone_ev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/input_left_right"
+                android:layout_marginStart="@dimen/input_left_right"
+                android:layout_marginTop="@dimen/input_top_bottom"
+                android:text="手机号"
+                android:textSize="@dimen/input_font_size"/>
+
+            <ImageView
+                android:id="@+id/input_spliter"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/input_left_right"
+                android:layout_marginRight="@dimen/input_left_right"
+                android:background="@drawable/line1"/>
+
+            <ImageButton
+                android:id="@+id/label_error_ibtn"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/input_spliter"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="@dimen/input_left_right"
+                android:layout_marginRight="@dimen/input_left_right"
+                android:background="@drawable/input__error"/>
+
+            <EditText
+                android:id="@+id/phone_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="@dimen/input_top_bottom"
+                android:layout_toEndOf="@id/label_phone_ev"
+                android:layout_toLeftOf="@+id/label_error_ibtn"
+                android:layout_toRightOf="@+id/label_phone_ev"
+                android:layout_toStartOf="@+id/label_error_ibtn"
+                android:background="#00000000"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="@string/login_phone_tip"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/input_font_size"/>
+
+            <TextView
+                android:id="@+id/label_password_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/input_top_bottom"
+                android:layout_marginLeft="@dimen/input_left_right"
+                android:layout_marginStart="@dimen/input_left_right"
+                android:gravity="right|end"
+                android:text="@string/login_password_tip"
+                android:textSize="@dimen/input_font_size"/>
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/input_top_bottom"
+                android:layout_marginEnd="53dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginStart="32dp"
+                android:layout_toEndOf="@id/label_password_tv"
+                android:layout_toRightOf="@id/label_password_tv"
+                android:background="#00000000"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/input_font_size"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/login_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_bt_height"
+            android:layout_below="@id/input_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/input_left_right"
+            android:layout_marginRight="@dimen/input_left_right"
+            android:layout_marginTop="@dimen/input_to_login"
+            android:background="@drawable/button"
+            android:text="@string/title_login"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_bt"
+            android:layout_marginLeft="@dimen/input_left_right"
+            android:layout_marginStart="@dimen/input_left_right"
+            android:layout_marginTop="14dp"
+            android:text="@string/first_register"
+            android:textColor="@color/font_color_login"
+            android:textSize="@dimen/input_font_size"/>
+
+        <TextView
+            android:id="@+id/retrieve_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/login_bt"
+            android:layout_marginEnd="@dimen/input_left_right"
+            android:layout_marginRight="@dimen/input_left_right"
+            android:layout_marginTop="14dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/font_color_login"
+            android:textSize="@dimen/input_font_size"/>
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@interestId/login_bt"-->
+            <!--android:layout_marginLeft="@dimen/input_left_right"-->
+            <!--android:layout_marginRight="@dimen/input_left_right"-->
+            <!--android:layout_marginTop="129dp"-->
+            <!--android:gravity="center">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="@drawable/line"-->
+                <!--android:contentDescription="@string/line"-->
+                <!--android:src="@drawable/line1"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/other_login"-->
+                <!--android:textColor="#929292"-->
+                <!--android:textSize="@dimen/input_font_size"/>-->
+
+        <!--</FrameLayout>-->
+
+
+    </RelativeLayout>
+
+</ScrollView>
